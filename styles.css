@@ -356,25 +356,25 @@ p {
 #courses {
   position: relative;
   background-color: hsl(209, 24%, 85%);
+  padding-bottom: 1rem;
 }
 
 .courses-title {
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 .course-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: ;
 }
 
 .course-column {
  width: 300px;
  background-color: white;
- margin-right: 1rem;
- margin-bottom: 1rem;
+ margin: 1rem;
 }
 
 .course-column a {
@@ -432,4 +432,124 @@ p {
     font-weight: 400;
   }
 
+}
+
+/* Start Thesis Section */
+
+#thesis {
+  width: 100%;
+}
+
+.thesis-title {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+
+}
+
+.thesis-flex-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.thesis-video {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-video video {
+  padding: 0 0 1.5rem 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.thesis-video h3 {
+  padding: 0 0.5rem 0.5rem 1.5rem;
+}
+
+.thesis-video p {
+  padding: 0 2.5rem 2rem 1.5rem;
+}
+
+.thesis-blocks-container {
+  width: 423px;
+  margin-left: 1.5rem;
+}
+
+.thesis-block-indiv {
+  display: flex;
+  padding: 1rem;
+}
+
+.thesis-blocks-container img {
+  width: 35%;
+  height: 35%;
+}
+
+.thesis-blocks-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thesis-blocks-text h3 {
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+#fisma :hover, #now-and-then :hover {
+    background-color: hsl(50, 50%, 90%);
+}
+
+@media only screen and (max-width: 424px) {
+  .thesis-blocks-container, .thesis-video h3, .thesis-video p {
+    display: none;
+  }
+
+  .thesis-video {
+    width: 100%;
+  }
+
+  .thesis-video video {
+    padding: 0 0 1.5rem 0;
+  }
+}
+
+/* Footer */
+
+#footer {
+  height: 3rem;
+  width: 100%;
+  border-top: 1px solid #cbcbcb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.footer-left {
+  padding-left: 1rem;
+}
+
+.footer-right{
+  padding-right: 1rem;
+}
+
+#footer a {
+  color: inherit;
+  text-decoration: none;
+  padding-left: 1rem;
+}
+
+
+@media only screen and (max-width: 424px) {
+
+  .footer-right {
+    display: none;
+  }
+
+  .footer-left {
+    padding-top: 1.5rem;
+  }
 }
